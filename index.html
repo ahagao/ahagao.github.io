@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zeyu Gao — Humanoid Whole-Body Control · World Models · Trustworthy LLMs</title>
+    <meta
+      name="description"
+      content="Zeyu Gao's academic homepage: humanoid whole-body control and motion retargeting, world models for robot learning, trustworthy and medical LLMs, and generative models."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#top">Zeyu&nbsp;Gao</a>
+        <nav class="topnav" aria-label="Sections">
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a class="nav-cv" href="assets/Zeyu_Gao_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="portrait">
+            <img src="assets/portrait.jpg" alt="Portrait of Zeyu Gao" />
+          </div>
+          <div class="intro">
+            <h1>Zeyu Gao <span class="zh" lang="zh">高泽宇</span></h1>
+            <p class="subtitle">Research Interests:</p>
+            <ul class="chips" aria-label="Research interests">
+              <li>Humanoid Whole-Body Control &amp; Motion Retargeting</li>
+              <li>World Models for Robot Learning</li>
+              <li>Trustworthy &amp; Medical LLMs</li>
+              <li>Generative Models</li>
+            </ul>
+            <p>
+              I am an M.Sc. student in Applied Artificial Intelligence at <a href="https://www.ntu.edu.sg/" target="_blank" rel="noreferrer">Nanyang Technological University</a> (expected Oct 2026) and a research intern at <a href="https://www.ntu.edu.sg/news/detail/new-alibaba-ntu-corporate-lab-to-advance-green-digital-technologies" target="_blank" rel="noreferrer">NTU ANGEL Lab</a>. My recent work spans animation-to-robot motion retargeting, command-conditioned humanoid whole-body control, robot skill learning in generative interactive worlds, and verifiable memory for medical LLMs.
+            </p>
+            <p>
+              Before NTU, I received my B.Eng. in Artificial Intelligence from Guizhou University, where I worked on knowledge-graph systems, medical image segmentation, and applied AI platforms.
+            </p>
+            <div class="link-row" aria-label="Profile links">
+              <a class="pill" href="mailto:gaoz0026@e.ntu.edu.sg"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+              <a class="pill" href="assets/Zeyu_Gao_CV.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i><span>CV</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Selected Publications</h2>
+            <div class="pub-filter" aria-label="Publication filters">
+              <button class="filter-btn active" type="button" data-filter="all">All</button>
+              <button class="filter-btn" type="button" data-filter="robotics">Robotics</button>
+              <button class="filter-btn" type="button" data-filter="llm">LLMs</button>
+              <button class="filter-btn" type="button" data-filter="vision">Vision &amp; Generation</button>
+            </div>
+          </div>
+          <p class="pub-note">&dagger; equal contribution &nbsp;&middot;&nbsp; * corresponding author</p>
+
+          <article class="publication" data-category="llm">
+            <div class="publication-media">
+              <img src="assets/freqalign-preview.png" alt="FreqAlign framework architecture" loading="lazy" />
+            </div>
+            <div class="publication-content">
+              <h3><a href="https://doi.org/10.1016/j.knosys.2026.116003" target="_blank" rel="noreferrer">FreqAlign: Bidirectional Frequency Alignment for Mitigating Contextual Hallucinations in LLM-based Extractive QA</a></h3>
+              <p class="authors"><strong>Zeyu Gao</strong>, Yizhang Liu*</p>
+              <p class="venue">Knowledge-Based Systems, 2026 <span class="tag">First Author</span><span class="tag">SCI Q1</span></p>
+              <p class="description">
+                A decoding-time calibration method that uses attention-frequency signals to emphasize relevant low-frequency entities and numbers while suppressing unrelated high-frequency tokens. Across six extractive QA benchmarks, it reduces entity replacement and numeric errors by 59% and 66%, with only 3.2% extra inference latency.
+              </p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.1016/j.knosys.2026.116003" target="_blank" rel="noreferrer"><i class="fa-solid fa-link"></i> DOI</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication" data-category="vision">
+            <div class="publication-media">
+              <img src="assets/fineforge-architecture.png" alt="FineForge reinforcement learning pipeline" loading="lazy" />
+            </div>
+            <div class="publication-content">
+              <h3><a href="https://gaohy63601-droid.github.io/fineforge/" target="_blank" rel="noreferrer">FineForge: Dual-Driven Reinforcement Learning for Fine-Grained Detail Generation in Diffusion Models</a></h3>
+              <p class="authors">Heyuan Gao&dagger;, Bangxun Tang&dagger;, <strong>Zeyu Gao</strong></p>
+              <p class="venue">ACM MM 2026 <span class="tag">Second Author</span></p>
+              <p class="description">
+                FineForge improves text, logo, and high-frequency detail fidelity in customized diffusion generation through a DIFT-localized edge-aware reward and Advantage-Weighted Local Feature Alignment. Training-time only with zero inference overhead; on DetailBench, it improves OCR accuracy by 14.87 points and reduces DreamSim error by about 32.1%.
+              </p>
+              <div class="pub-links">
+                <a href="https://gaohy63601-droid.github.io/fineforge/" target="_blank" rel="noreferrer"><i class="fa-solid fa-globe"></i> Project Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication" data-category="robotics">
+            <div class="publication-media">
+              <video src="assets/flowop-cover.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <div class="publication-content">
+              <h3><a href="https://flowop-submission.github.io/" target="_blank" rel="noreferrer">FlowOp: Morphology-Agnostic Animation-to-Robot Motion Retargeting via Sceneflow-Conditioned Diffusion</a></h3>
+              <p class="authors"><strong>Zeyu Gao</strong>, Zeran Su, Peiran Liu, Zicheng Duan, Zelin Tao, Qiang Zhang, Jiahao Ma*</p>
+              <p class="venue">Under review at NeurIPS 2026 <span class="tag">First Author</span></p>
+              <p class="description">
+                FlowOp formulates MA-A2R: given an arbitrary animated character video and a target humanoid robot's kinematics, generate executable, physically plausible joint trajectories. Sceneflow-conditioned visual-skeleton encoding, Skeleton-Anchored Attention, and a Rectified-Flow DiT deliver 5.8&times; lower cross-morphology MPJPE than MoCapAnything on the 7,800+ clip AnimBot benchmark.
+              </p>
+              <div class="pub-links">
+                <a href="https://flowop-submission.github.io/" target="_blank" rel="noreferrer"><i class="fa-solid fa-globe"></i> Project Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication" data-category="llm">
+            <div class="publication-media">
+              <img src="assets/medguardmem-architecture.png" alt="MedGuardMem framework architecture" loading="lazy" />
+            </div>
+            <div class="publication-content">
+              <h3>MedGuardMem: A Verifiable Dual-Memory Framework for Expert-Level Medical Question Answering</h3>
+              <p class="authors"><strong>Zeyu Gao</strong>, Heyuan Gao</p>
+              <p class="venue">Under review at EMNLP 2026 <span class="tag">First Author</span></p>
+              <p class="description">
+                A dual-memory framework that couples K-Memory for SID-based medical knowledge recall with E-Memory for executable TCSA safety constraints. On MedXpertQA-Text, it reaches 27.26% with Qwen3-8B while cutting the contraindication rate from 19.3% to 6.1%, and 43.75% with a 27B model &mdash; a new open-source state of the art.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication" data-category="llm">
+            <div class="publication-media">
+              <img src="assets/review-architecture.png" alt="Automatic Context Engineering taxonomy diagram" loading="lazy" />
+            </div>
+            <div class="publication-content">
+              <h3>A Review on Automatic Context Engineering</h3>
+              <p class="authors">Xinyu Tong, <strong>Zeyu Gao</strong>, Yixuan Chen, Baosheng Yu, Yibing Zhan, Yongcheng Jing, Dacheng Tao</p>
+              <p class="venue">Under review at EMNLP 2026 <span class="tag">Second Author</span><span class="tag">Survey</span></p>
+              <p class="description">
+                The first dedicated survey of Automatic Context Engineering, organizing the field into a type-by-step taxonomy: Guiding, Evidence, and Tool context elements across Baseline, Candidate Generation, Scoring, Selection, and Updating stages.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container two-col">
+          <div>
+            <h2>Research Projects</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <p class="time">Ongoing</p>
+                <h3>Robot Skill Learning in Generative Interactive Worlds</h3>
+                <p>Leveraging world models and video-generation models to automatically construct diverse robot task environments, converting generated visual worlds into simulation scenes with geometric, physical, and interactive properties, and closing the loop from environment generation to imitation learning and real-world deployment.</p>
+              </div>
+              <div class="timeline-item">
+                <p class="time">Ongoing</p>
+                <h3>Command-Conditioned Humanoid Whole-Body Control</h3>
+                <p>Building a library of reference humanoid motions in a game engine &mdash; e.g., forward, backward, and crouched walking on stairs &mdash; and extending NVIDIA's SONIC foundation model with a dedicated command branch: a privileged teacher policy (height maps, simulator states) learns to track the authored trajectories, then is distilled into a student policy running on onboard observations such as depth.</p>
+                <div class="project-video">
+                  <video src="assets/humanoid-stairs-walkturn.mp4" autoplay muted loop playsinline controls></video>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <p class="time">2023.07 &ndash; 2023.09</p>
+                <h3>ProResUNet Brain Tumor Segmentation System</h3>
+                <p>Designed an enhanced U-Net architecture with pre-activation residual blocks and feature-fusion upsampling, then built an end-to-end segmentation and visualization system with software copyright registration.</p>
+              </div>
+              <div class="timeline-item">
+                <p class="time">2022.03 &ndash; 2023.03</p>
+                <h3>Tax Knowledge Graph Construction and Visualization</h3>
+                <p>Led an SRT project that parsed regulation clauses into a multi-faceted knowledge forest, added temporal and consistency constraints, and built Python workflows for tax calculation, deduction simulation, and semantic query visualization.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <p class="time">2025.11 &ndash; 2026.10 expected</p>
+                <h3>Nanyang Technological University</h3>
+                <p>M.Sc. in Applied Artificial Intelligence. All-A record across all coursework to date.</p>
+              </div>
+              <div class="timeline-item">
+                <p class="time">2020.09 &ndash; 2024.06</p>
+                <h3>Guizhou University</h3>
+                <p>B.Eng. in Artificial Intelligence. Top 10 in major ranking; University-Level Merit Student (2021&ndash;2022); Second-Class Scholarship (2022&ndash;2023).</p>
+              </div>
+            </div>
+
+            <h2 class="mt">Skills &amp; Certifications</h2>
+            <ul class="fact-list">
+              <li><span class="fact-label">Programming</span>Python, PyTorch, C/C++, MATLAB</li>
+              <li><span class="fact-label">Software Copyright</span>Automatic Brain-Tumor Segmentation &amp; Visualization System (2023.09)</li>
+              <li><span class="fact-label">Certificates</span>CET-6; Intermediate Software Designer (2022.11)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Zeyu Gao</p>
+        <p>Last updated July 2026</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
